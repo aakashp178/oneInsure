@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.hero_section {
+    background: url('./images/hero_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 996px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_card {
+    background: #7EBA93;
+    color: #10110D;
+    border-radius: 15px;
+    padding: 32px;
+    margin: 24px 0;
+    height: fit-content;
+    max-width: 384px;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    transform: scale(.8);
+    transition: .3s all;
+}
+
+.slick-center.hero_card {
+    background: #00D64B;
+    transform: scale(1);
+}
+
+.card_img_wrap {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+}
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 306px;
+}
+
+.card_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1%;
+}
+
+.hero_text {
+    width: 100%;
+    max-width: 478px;
+}
+
+.hero_text .title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+.hero_text .text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
+}
+
+/* Goal planner css */
+.goalPlanner_section {
+    padding: 0 15px;
+}
+.goalPlanner_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.section_heading {
+    width: 100%;
+    max-width: 927px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    letter-spacing: -0.01em;
+    margin-bottom: 69px;
+}
+
+.section_heading .highlight {
+    color: #049939;
+    border-bottom: 2px solid #2B2B2B;
+}
+
+.planner_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.goalPlanner_wrap {
+    flex: 1;
+
+}
+
+.goal_planner {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 408px;
+    margin: 0 auto;
+}
+
+.input_group {
+    margin-bottom: 24px;
+}
+
+.input_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input_sign_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid #00000061;
+    min-width: 113px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    letter-spacing: -0.01em;
+}
+
+.input_sign_wrap #period {
+    width: 30px;
+}
+
+.input_currency_sign {
+    margin-right: auto;
+}
+
+.input_years_sign {
+    padding-left: 5px;
+}
+
+.input_group input[type="number"] {
+    max-width: 80px;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    letter-spacing: -0.01em;
+}
+
+.input_group input[type="range"] {
+    width: 100%;
+}
+
+.range {
+    background: linear-gradient(to left, #E5E7E0 100%, #00D64B 0%);
+    height: 6px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    margin: 20px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.range [type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 30px;
+}
+
+.range [type=range]:focus {
+    outline: none;
+}
+
+.range [type=range]::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.range [type=range]::-moz-range-track {
+    background: transparent;
+}
+
+.range [type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #049939;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.range [type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #049939;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.range [type=range]::-ms-thumb {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #049939;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.range [type=range]::-ms-fill-lower {
+    background: #00D64B;
+}
+
+.range [type=range]::-ms-fill-upper {
+    background: #e2e2ea;
+}
+
+.range [type=range]::-ms-track {
+    color: transparent;
+    border: 0 solid transparent;
+    background: transparent;
+}
+
+.range [type=range]::-ms-tooltip {
+    display: none;
+}
+
+
+.label_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+#investBtn {
+    background-color: #00D64B;
+    color: #10110D;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.01em;
+}
+
+#investBtn:hover {
+    background-color: #218838;
+}
+
+.car_image_wrap {
+    flex: 1;
+}
+
+.car_image_wrap img {
+    width: 100%;
+}
+
+.chart_wrap {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* Goal planner css */
+
+/* Supercharge section css */
+.supercharge_section {
+    background: url('./images/supercharge_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 10px;
+}
+
+.supercharge_container {
+    width: 100%;
+    max-width: 812px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.supercharge_section .section_title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.supercharge_section .section_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 24px;
+    color: #fff;
+}
+
+.signUp_btn {
+    width: 100%;
+    max-width: 180px;
+    background: #00D64B;
+    color: #10110D;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.signUp_btn:hover {
+    background: #218838;
+}
+
+
+
+/* Supercharge section css */
+
+
+@media screen and (max-width: 900px) {
+    .hero_text .title {
+        font-size: 48px;
+        /* line-height: 55px; */
+    }
+    .section_heading {
+        font-size: 54px;
+    }
+    .input_group input[type="number"], .input_sign_wrap {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero_container {
+        flex-direction: column-reverse;
+    }
+    .card_img_wrap {
+        width: 80px;
+        height: 80px;
+    }
+    .card_title {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .card_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .cards_container{
+        overflow: hidden;
+    }
+    .hero_section {
+        padding: 48px 30px;
+    }
+    .hero_text .title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .hero_text .text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .hero_card {
+        margin: 0;
+    }
+    .goalPlanner_section {
+        padding: 0 30px;
+    }
+    .goalPlanner_container {
+        padding: 48px 0;
+    }
+    .section_heading {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    .planner_flex {
+        flex-direction: column;
+    }
+    .goalPlanner_wrap {
+        width: 100%;
+    }
+    .goal_planner {
+        max-width: 100%;
+    }
+    .input_group label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .supercharge_section {
+        padding: 48px 30px;
+    }
+    .supercharge_section .section_title {
+        font-size: 36px;
+        line-height: 43px;
+    }
+    .supercharge_section .section_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .chart_wrap {
+        height: 300px;
+        min-width: 300px;
+    }
+}

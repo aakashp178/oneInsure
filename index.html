@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneInsure</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <section class="hero_section">
+        <div class="hero_container">
+            <div class="cards_container">
+                <div class="hero_card">
+                    <div class="card_img_wrap">
+                        <figure>
+                            <img src="./images/financial_Strategy.png" alt="Comprehensive Financial Strategy"
+                                class="card_img">
+                        </figure>
+                    </div>
+                    <h4 class="card_title">Comprehensive Financial Strategy</h4>
+                    <p class="card_text">Get a blueprint of your investment plans</p>
+                </div>
+                <div class="hero_card">
+                    <div class="card_img_wrap">
+                        <figure>
+                            <img src="./images/wealth_Management.png" alt="Personalized Wealth Management"
+                                class="card_img">
+                        </figure>
+                    </div>
+                    <h4 class="card_title">Personalized Wealth Management</h4>
+                    <p class="card_text">One stop solution to your wealth management needs</p>
+                </div>
+                <div class="hero_card">
+                    <div class="card_img_wrap">
+                        <figure>
+                            <img src="./images/expert_Advice.png" alt="Expert Advice" class="card_img">
+                        </figure>
+                    </div>
+                    <h4 class="card_title">Expert Advice</h4>
+                    <p class="card_text">Crafting Your Financial Future with Precision</p>
+                </div>
+            </div>
+            <div class="hero_text">
+                <h2 class="title">Equip yourself with unmatched benefits</h2>
+                <p class="text">Become a pro with managing your finance with this tailored and customizable plan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="goalPlanner_section">
+        <div class="goalPlanner_container">
+            <h1 class="section_heading">Select The Goal You Want To Plan For
+                <span class="highlight">Dream Car
+                    <span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_0_540" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="40" height="40">
+                                <rect width="40" height="40" fill="#D9D9D9" />
+                            </mask>
+                            <g mask="url(#mask0_0_540)">
+                                <path
+                                    d="M20 25.6667L10 15.6667L12.3333 13.3333L20 21L27.6667 13.3333L30 15.6667L20 25.6667Z"
+                                    fill="#10110D" />
+                            </g>
+                        </svg>
+                    </span>
+                </span>
+            </h1>
+            <div class="planner_flex">
+                <div class="goalPlanner_wrap">
+                    <div class="goal_planner">
+                        <div class="input_group">
+                            <div class="label_group">
+                                <label for="goalAmount">My Goal Amount is</label>
+                                <div class="input_sign_wrap">
+                                    <span class="input_currency_sign">₹</span>
+                                    <input type="number" id="goalAmount" value="10000">
+                                </div>
+                            </div>
+                            <div class="range">
+                                <input type="range" id="goalAmountSlider" min="1000" max="100000" step="500"
+                                    value="10000">
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <div class="label_group">
+                                <label for="period">For a period of</label>
+                                <div class="input_sign_wrap">
+                                    <input type="number" id="period" value="5">
+                                    <span class="input_years_sign"> Years</span>
+                                </div>
+                            </div>
+                            <div class="range">
+                                <input type="range" id="periodSlider" min="1" max="30" step="1" value="5">
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <div class="label_group">
+                                <label for="growthRate">Growth Rate</label>
+                                <div class="input_sign_wrap">
+                                    <input type="number" id="growthRate" value="12">
+                                    <span class="input_percent_sign">%</span>
+                                </div>
+                            </div>
+                            <div class="range">
+                                <input type="range" id="growthRateSlider" min="1" max="20" step="1" value="12">
+                            </div>
+                        </div>
+                        <button id="investBtn">Invest Now</button>
+                    </div>
+                </div>
+                <div class="car_image_wrap">
+                    <figure id="goalPlanner_img">
+                        <img src="./images/car.png" alt="car">
+                    </figure>
+                    <div class="chart_wrap">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="supercharge_section">
+        <div class="supercharge_container">
+            <h2 class="section_title" data-aos="fade-up">Supercharge your journey to wealth creation</h2>
+            <p class="section_text" data-aos="fade-up" data-aos-delay="200">Offering Solutions and Not Products</p>
+            <button class="signUp_btn">Sign Up</button>
+        </div>
+    </section>
+</body>
+
+</html>
